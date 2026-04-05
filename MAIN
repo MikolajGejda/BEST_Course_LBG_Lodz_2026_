@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html class="scroll-smooth" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
@@ -83,15 +85,15 @@
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-[#fcf9f5]/70 backdrop-blur-xl shadow-[0px_20px_40px_rgba(28,28,26,0.06)]">
 <div class="max-w-7xl mx-auto px-8 py-4 flex justify-between items-center">
-<div class="text-2xl font-black text-[#305aa6] tracking-tighter font-['Plus_Jakarta_Sans']"><img alt="BEST Logo" class="h-10 w-auto" src="https://lh3.googleusercontent.com/aida/ADBb0uj1KJGtzsAdb1kqX_i05rjvs0UKfemkF4gxE0fXK_0pdvBl7lJ-RBptDcUWZ677CwXoUr2fVEv58bz61Kae88eo2BDJXWVvo5UdMuNHwJLkoSCAeU0oa2OZ3ry2SuRC-VoZ0qF7Oqyyx21cMJd1OAB4Q1JJ7rQ8iH6RNsJmvuCghlQ7LT617V0terAU-ToI5Gdystf5YQwR3XmTXqxGrMzUpyTtYQjVH9oPjZzIyTClEqWwT_tNKU8sRSwEVFFawUkse1fnoo_LCQ"/></div>
+<div class="text-2xl font-black text-[#305aa6] tracking-tighter font-['Plus_Jakarta_Sans']">  <a href="https://www.best-lodz.pl"><img alt="BEST Logo" class="h-20 w-auto" src="https://www.best-lodz.pl/wp-content/uploads/2020/10/BEST-lodz.png"</a></div>
 <div class="hidden md:flex items-center gap-8 font-['Plus_Jakarta_Sans'] font-bold tracking-tight">
 <a class="text-[#305aa6] border-b-2 border-[#305aa6] pb-1" href="#home">Home</a>
 <a class="text-[#1c1c1a] opacity-70 hover:opacity-100 transition-opacity hover:text-[#305aa6]" href="#schedule">Schedule</a>
 <a class="text-[#1c1c1a] opacity-70 hover:opacity-100 transition-opacity hover:text-[#305aa6]" href="#about">About</a>
 </div>
-<button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-bold scale-95 active:scale-90 transition-transform">
+<a href="https://www.best.eu.org/courses/list.jsp"><button class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-full font-bold scale-95 active:scale-90 transition-transform">
                 Apply
-            </button>
+            </button></a>
 </div>
 <div class="bg-[#f6f3ef]/50 h-[1px] w-full absolute bottom-0"></div>
 </nav>
@@ -132,9 +134,9 @@
 </div>
 </div>
 <div class="flex items-center gap-4 pt-4">
-<button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg shadow-[0px_20px_40px_rgba(48,90,166,0.2)] hover:scale-105 transition-transform">
+<a href="https://www.best.eu.org/courses/list.jsp" <button class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg shadow-[0px_20px_40px_rgba(48,90,166,0.2)] hover:scale-105 transition-transform">
                         Apply Now
-                    </button>
+                    </button></a>
 <button class="flex items-center gap-2 px-8 py-4 rounded-full font-headline font-bold text-lg text-primary hover:bg-surface-container-low transition-colors">
                         Discover More
                         <span class="material-symbols-outlined">arrow_downward</span>
@@ -187,64 +189,35 @@
 </div>
 </div>
 </section>
-<!-- Learning Goals (Bento Grid) -->
+<!-- Schedule Section z lightboxem -->
 <section class="py-32" id="schedule">
-<div class="max-w-7xl mx-auto px-8">
-<div class="text-center mb-20">
-<span class="text-tertiary font-headline font-bold uppercase tracking-widest text-sm mb-4 block">The Curriculum</span>
-<h2 class="text-4xl md:text-5xl font-headline font-bold tracking-tight">Master the ML Pipeline</h2>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-6">
-<!-- Data Processing -->
-<div class="md:col-span-2 bg-surface-container rounded-3xl p-8 flex flex-col justify-between hover:shadow-lg transition-all border border-outline-variant/10">
-<div class="space-y-4">
-<span class="material-symbols-outlined text-primary text-5xl">database</span>
-<h4 class="text-2xl font-headline font-bold">Data Wrangling &amp; Processing</h4>
-<p class="text-on-surface-variant">Clean, transform, and architect unstructured data streams into actionable pipelines.</p>
-</div>
-<div class="mt-8 flex gap-2">
-<span class="px-3 py-1 bg-surface-container-highest rounded-full text-xs font-bold uppercase tracking-tighter">Pandas</span>
-<span class="px-3 py-1 bg-surface-container-highest rounded-full text-xs font-bold uppercase tracking-tighter">SQL</span>
-<span class="px-3 py-1 bg-surface-container-highest rounded-full text-xs font-bold uppercase tracking-tighter">Spark</span>
-</div>
-</div>
-<!-- ML Pipeline -->
-<div class="bg-primary text-on-primary rounded-3xl p-8 flex flex-col justify-between hover:translate-y-[-4px] transition-all">
-<span class="material-symbols-outlined text-4xl">schema</span>
-<div class="mt-12">
-<h4 class="text-xl font-headline font-bold mb-2">The ML Pipeline</h4>
-<p class="text-on-primary-container/80 text-sm">End-to-end architecture from ingestion to deployment.</p>
-</div>
-</div>
-<!-- Real-world -->
-<div class="bg-surface-container-highest rounded-3xl p-8 flex flex-col justify-between border border-primary/10">
-<span class="material-symbols-outlined text-4xl text-tertiary">rocket_launch</span>
-<div class="mt-12">
-<h4 class="text-xl font-headline font-bold mb-2">Real-world Challenges</h4>
-<p class="text-on-surface-variant text-sm">Solving industry-standard problems with cutting-edge tech.</p>
-</div>
-</div>
-<!-- Predictive -->
-<div class="bg-surface-container rounded-3xl p-8 flex flex-col justify-between border border-outline-variant/10">
-<span class="material-symbols-outlined text-4xl text-primary">auto_graph</span>
-<div class="mt-12">
-<h4 class="text-xl font-headline font-bold mb-2">Predictive Modeling</h4>
-<p class="text-on-surface-variant text-sm">Forecasting trends with regression and classification.</p>
-</div>
-</div>
-<!-- Statistics -->
-<div class="md:col-span-2 lg:col-span-3 bg-tertiary-fixed rounded-3xl p-8 flex items-center gap-8 overflow-hidden relative">
-<div class="flex-1 space-y-4 relative z-10">
-<h4 class="text-3xl font-headline font-bold text-on-tertiary-fixed">Advanced Statistics</h4>
-<p class="text-on-tertiary-fixed-variant max-w-md">Understanding the mathematical backbone of modern AI tools and analytics frameworks.</p>
-<button class="bg-tertiary text-on-tertiary px-6 py-3 rounded-full font-bold">Learn the Math</button>
-</div>
-<div class="hidden md:block absolute right-0 top-0 h-full opacity-20 rotate-12">
-<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'wght' 200;">functions</span>
-</div>
-</div>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="text-center mb-12">
+      <span class="text-tertiary font-headline font-bold uppercase tracking-widest text-sm mb-4 block">Plan kursu</span>
+      <h2 class="text-4xl md:text-5xl font-headline font-bold tracking-tight">
+        Schedule
+      </h2>
+      <p class="text-on-surface-variant text-lg max-w-2xl mx-auto mt-4">
+        Check detailed day plan!!!
+      </p>
+    </div>
+
+    <!-- Kontener na obraz z lightboxem -->
+    <div class="relative group rounded-2xl overflow-hidden shadow-xl bg-surface-container-highest cursor-pointer" id="scheduleImageContainer">
+      <!-- Miejsce na obraz harmonogramu – na razie placeholder -->
+      <div class="aspect-[4/3] md:aspect-[16/9] bg-surface-container-highest flex items-center justify-center border-2 border-dashed border-outline-variant/50 rounded-2xl">
+        <div class="text-center p-8">
+          <span class="material-symbols-outlined text-5xl text-outline-variant">image</span>
+          <p class="text-on-surface-variant mt-2">Click to make the schedule bigger!</p>
+        </div>
+      </div>
+      <!-- Nakładka informująca o kliknięciu -->
+      <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors flex items-center justify-center opacity-0 group-hover:opacity-100">
+        <span class="material-symbols-outlined text-white text-4xl drop-shadow-lg">zoom_in</span>
+      </div>
+    </div>
+    <p class="text-center text-sm text-on-surface-variant mt-4">* Schedule will be posted soon!</p>
+  </div>
 </section>
 <!-- Social/Cultural Section: Łódź -->
 <section class="py-32 overflow-hidden" id="about">
@@ -314,16 +287,21 @@
 <!-- Map/Location Section -->
 <section class="py-20 bg-surface-container-low">
 <div class="max-w-7xl mx-auto px-8">
-<div class="rounded-[2rem] overflow-hidden h-[400px] relative shadow-xl">
-<img class="w-full h-full object-cover grayscale brightness-50" data-alt="Stylized map showing central Poland and the city of Lodz highlighted with a tech-style glowing marker" data-location="Lodz, Poland" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYQt2fJonB9ERrRFiiPKbmcF6k7rEqHwZNiMRaMd7CMa3Oq1aXXvdhSSNlL0OQ9txXj0Cw5I2Ao3VTUCk8s2exXssXELtQ-y7qiczYvxAXwk3SYQ9nEERAArl1-vMGQbI_OzqojuXdnIypd_iVcvbVAAOGSARcK7E_9qsgoO2_mBd4qC8fsaKw7E3TtkxX3aRTYF2OaGLT2MFsmXuFhC5wF-Wyrq4GO9OCzyD5OoeSbrheWpgwfhdTL0Z-6kM93LckyCztx5TwFY0"/>
-<div class="absolute inset-0 flex items-center justify-center">
-<div class="glass-card p-8 rounded-3xl text-center border border-white/30">
-<span class="material-symbols-outlined text-tertiary text-4xl mb-2">explore</span>
-<h4 class="text-2xl font-headline font-bold mb-1">Meet us in Łódź</h4>
-<p class="text-on-surface-variant">Poland's central hub for technology and design.</p>
-</div>
-</div>
-</div>
+<section class="py-20 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto px-8">
+    
+    <div class="rounded-[2rem] overflow-hidden h-[400px] shadow-xl">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2469.823749169887!2d19.449373800000004!3d51.754546399999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471a34d85d1152f3%3A0xbe75c3beee4bad56!2zUG9saXRlY2huaWthIMWBw7Nkemth!5e0!3m2!1spl!2spl!4v1774515904250!5m2!1spl!2spl"
+        class="w-full h-full border-0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+
+  </div>
+</section>
 </div>
 </section>
 <!-- Apply Section (Call to Action) -->
@@ -341,12 +319,24 @@
                         Applications for the Autumn 2026 course are now open. Don't miss your chance to experience Łódź and master data analytics.
                     </p>
 <div class="pt-8 flex flex-col sm:flex-row justify-center gap-6">
-<button class="bg-primary text-on-primary px-10 py-5 rounded-full font-headline font-bold text-xl hover:scale-105 active:scale-95 transition-all shadow-lg">
+<a href="https://www.best.eu.org/courses/list.jsp" <button class="bg-primary text-on-primary px-10 py-5 rounded-full font-headline font-bold text-xl hover:scale-105 active:scale-95 transition-all shadow-lg">
                             Apply for this Course
-                        </button>
-<button class="bg-surface/10 backdrop-blur-md text-surface border border-surface/20 px-10 py-5 rounded-full font-headline font-bold text-xl hover:bg-surface/20 transition-all">
-                            Contact Organizers
-                        </button>
+                        </button></a>
+<div class="relative inline-block" id="contactDropdownContainer">
+  <button id="contactDropdownBtn" class="bg-surface/10 backdrop-blur-md text-surface border border-surface/20 px-10 py-5 rounded-full font-headline font-bold text-xl hover:bg-surface/20 transition-all">
+    Contact Organizers
+  </button>
+  <div id="contactDropdownMenu" class="absolute bottom-full mb-2 left-0 w-64 bg-surface text-on-surface rounded-xl shadow-lg hidden z-20">
+    <div class="p-4 space-y-3">
+      <p class="font-bold">Email:</p>
+      <a href="mailto:osoba1@example.com" class="block text-sm hover:text-primary">mikolaj.gejda@best-eu.org</a>
+      <a href="mailto:osoba2@example.com" class="block text-sm hover:text-primary">wojciech.kret@best-eu.org</a>
+      <p class="font-bold mt-2">Telefon:</p>
+      <a href="tel:+48123456789" class="block text-sm hover:text-primary">Main Organiser Mikołaj Gejda +48 690 032 656</a>
+      <a href="tel:+48987654321" class="block text-sm hover:text-primary">Particpants Supervisor Wojciech Kret +48 733 180 143</a>
+    </div>
+  </div>
+</div>
 </div>
 <p class="text-surface/40 text-sm font-label uppercase tracking-widest pt-4">
                         Deadline: May 2026
@@ -357,22 +347,182 @@
 </section>
 <!-- Footer -->
 <footer class="w-full py-12 border-t border-[#e5e2de]/30 bg-[#f6f3ef] text-[#1c1c1a] font-['Manrope'] text-sm">
-<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-<div class="space-y-4">
-<div class="font-['Plus_Jakarta_Sans'] font-bold text-[#9e3d27] text-2xl uppercase tracking-tighter">
-                    BEST Łódź
-                </div>
-<p class="opacity-60 max-w-sm">
-                    Empowering students through high-quality technical education and international cultural exchange since 1989.
-                </p>
-<p class="font-bold">© 2024 Board of European Students of Technology</p>
-</div>
-<div class="flex flex-wrap md:justify-end gap-8">
-<a class="opacity-60 hover:text-[#9e3d27] transition-colors" href="#">Contact</a>
-<a class="opacity-60 hover:text-[#9e3d27] transition-colors" href="#">Facebook</a>
-<a class="opacity-60 hover:text-[#9e3d27] transition-colors" href="#">Instagram</a>
-<a class="opacity-60 hover:text-[#9e3d27] transition-colors" href="#">LinkedIn</a>
-</div>
-</div>
+  <div class="max-w-7xl mx-auto px-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    <div class="space-y-4">
+      <a href="https://www.best-lodz.pl">
+        <img alt="BEST Logo" class="h-10 w-auto" src="https://www.best-lodz.pl/wp-content/uploads/2020/10/BEST-lodz.png">
+      </a>
+      <p>Empowering students through high-quality technical education and international cultural exchange since 1989.</p>
+      <p class="font-bold">© 2024 Board of European Students of Technology</p>
+    </div>
+    <div class="flex flex-wrap md:justify-end gap-8">
+      <div class="relative inline-block">
+        <button id="footerContactBtn" class="opacity-60 hover:text-[#9e3d27] transition-colors cursor-pointer bg-transparent">
+          Contact
+        </button>
+        <div id="footerContactMenu" class="absolute bottom-full mb-2 left-0 w-64 bg-surface text-on-surface rounded-xl shadow-lg hidden z-20 border border-outline-variant/30">
+          <div class="p-4 space-y-3">
+            <p class="font-bold text-sm">Email:</p>
+            <a href="mailto:osoba1@example.com" class="block text-sm hover:text-primary">mikolaj.gejda@best-eu.org</a>
+            <a href="mailto:osoba2@example.com" class="block text-sm hover:text-primary">wojciech.kret@best-eu.org</a>
+            <p class="font-bold text-sm mt-2">Phone numbers:</p>
+            <a href="tel:+48123456789" class="block text-sm hover:text-primary">Main Organiser Mikołaj Gejda +48 690 032 656</a>
+            <a href="tel:+48987654321" class="block text-sm hover:text-primary">Particpants Supervisor Wojciech Kret +48 733 180 143</a>
+          </div>
+        </div>
+      </div>
+      <a class="opacity-60 hover:text-[#9e3d27] transition-colors" href="https://www.facebook.com/bestlodz/?locale=pl_PL">Facebook</a>
+      <a class="opacity-60 hover:text-[#9e3d27] transition-colors" href="https://www.instagram.com/best_lodz/">Instagram</a>
+      <a class="opacity-60 hover:text-[#9e3d27] transition-colors" href="https://pl.linkedin.com/company/best-lodz">LinkedIn</a>
+    </div>
+  </div>
 </footer>
+<script>
+  const btn = document.getElementById('contactDropdownBtn');
+  const menu = document.getElementById('contactDropdownMenu');
+  if (btn && menu) {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      menu.classList.toggle('hidden');
+    });
+    document.addEventListener('click', (e) => {
+      if (!btn.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.add('hidden');
+      }
+    });
+  }
+</script>
+
+<script>
+  const footerBtn = document.getElementById('footerContactBtn');
+  const footerMenu = document.getElementById('footerContactMenu');
+  if (footerBtn && footerMenu) {
+    footerBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      footerMenu.classList.toggle('hidden');
+    });
+    document.addEventListener('click', (e) => {
+      if (!footerBtn.contains(e.target) && !footerMenu.contains(e.target)) {
+        footerMenu.classList.add('hidden');
+      }
+    });
+  }
+</script>
+<script>
+  // Znajdź wszystkie linki w nawigacji
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  const sections = document.querySelectorAll('section[id]');
+
+  // Funkcja usuwająca klasy aktywnego linku ze wszystkich
+  function removeActiveClasses() {
+    navLinks.forEach(link => {
+      link.classList.remove('border-b-2', 'border-[#305aa6]', 'pb-1');
+      link.classList.add('text-[#1c1c1a]', 'opacity-70', 'hover:opacity-100', 'transition-opacity', 'hover:text-[#305aa6]');
+    });
+  }
+
+  // Funkcja dodająca klasy aktywnego linku do wybranego elementu
+  function setActive(link) {
+    if (!link) return;
+    removeActiveClasses();
+    link.classList.remove('text-[#1c1c1a]', 'opacity-70', 'hover:opacity-100', 'transition-opacity', 'hover:text-[#305aa6]');
+    link.classList.add('text-[#305aa6]', 'border-b-2', 'border-[#305aa6]', 'pb-1');
+  }
+
+  // Obsługa kliknięcia – ustawia aktywny link i płynnie przewija
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        setActive(this);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+        history.pushState(null, null, `#${targetId}`); // opcjonalnie zmienia URL
+      }
+    });
+  });
+
+  // Opcjonalnie: podświetlanie linku podczas scrollowania
+  function highlightOnScroll() {
+    const scrollPosition = window.scrollY + 120; // dostosuj offset (wysokość nawigacji)
+    let currentSectionId = '';
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionBottom = sectionTop + section.offsetHeight;
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        currentSectionId = section.getAttribute('id');
+      }
+    });
+
+    if (currentSectionId) {
+      const activeLink = document.querySelector(`nav a[href="#${currentSectionId}"]`);
+      if (activeLink) {
+        setActive(activeLink);
+      }
+    } else if (scrollPosition < sections[0].offsetTop) {
+      // Jeśli jesteśmy przed pierwszą sekcją, podświetl Home
+      const homeLink = document.querySelector('nav a[href="#home"]');
+      if (homeLink) setActive(homeLink);
+    }
+  }
+
+  window.addEventListener('scroll', highlightOnScroll);
+  window.addEventListener('load', highlightOnScroll);
+</script>
+
+<!-- Lightbox overlay -->
+<div id="lightbox" class="fixed inset-0 bg-black/90 z-[100] hidden items-center justify-center p-4 cursor-pointer" style="display: none;">
+  <div class="relative max-w-5xl max-h-[90vh]">
+    <img id="lightboxImage" class="max-w-full max-h-full object-contain rounded-lg shadow-2xl" src="" alt="Powiększony harmonogram">
+    <button id="closeLightbox" class="absolute -top-10 right-0 text-white text-4xl hover:text-primary">&times;</button>
+  </div>
+</div>
+
+<script>
+  // Obsługa lightboxa dla harmonogramu
+  const container = document.getElementById('scheduleImageContainer');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImage = document.getElementById('lightboxImage');
+  const closeBtn = document.getElementById('closeLightbox');
+
+  function openLightbox(imageSrc) {
+    if (!imageSrc) return;
+    lightboxImage.src = imageSrc;
+    lightbox.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.style.display = 'none';
+    lightboxImage.src = '';
+    document.body.style.overflow = '';
+  }
+
+  if (container) {
+    container.addEventListener('click', (e) => {
+      const img = container.querySelector('img');
+      if (img && img.src) {
+        openLightbox(img.src);
+      } else {
+        alert('Schedule will be posted soon!');
+      }
+    });
+  }
+
+  if (lightbox) {
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox || e.target === closeBtn) {
+        closeLightbox();
+      }
+    });
+  }
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox && lightbox.style.display === 'flex') {
+      closeLightbox();
+    }
+  });
+</script>
 </body></html>
