@@ -14,7 +14,7 @@
           extend: {
             colors: {
               "surface": "#fcf9f5",
-              "outline-variant": "#c3c6d3",
+              "outline-variant": "#c3c6e3",
               "on-tertiary-container": "#fffbff",
               "on-error": "#ffffff",
               "on-background": "#1c1c1a",
